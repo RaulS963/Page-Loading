@@ -49,7 +49,11 @@
 
     </body>
     <script>
-        window.addEventListener("DOMContentLoaded",function(){
+        // function to hide the page-loader git
+        window.addEventListener("load",function(){
+               console.log("hello world!");
+        });
+        window.addEventListener("load",function(){
             const loader = document.querySelector(".loader");
             loader.className += " hidden";  // space is important => class="loader hidden"
         })
